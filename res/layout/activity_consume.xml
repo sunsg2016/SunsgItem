@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sunsg.item.view.StickyNavLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffd5d5d5"
+    android:orientation="vertical" >
+    
+    <RelativeLayout  
+        android:id="@id/id_stickynavlayout_topview"  
+        android:layout_width="match_parent"  
+        android:layout_height="300dp"  
+        android:background="#4400ff00" >  
+  
+        <TextView  
+            android:layout_width="match_parent"  
+            android:layout_height="match_parent"  
+            android:gravity="center"  
+            android:text="软件介绍"  
+            android:textSize="30sp"  
+            android:textStyle="bold" />  
+    </RelativeLayout>  
+    
+    <com.sunsg.item.view.SimpleViewPagerIndicator  
+        android:id="@id/id_stickynavlayout_indicator"  
+        android:layout_width="match_parent"  
+        android:layout_height="50dp"  
+        android:background="#ffffffff" >  
+    </com.sunsg.item.view.SimpleViewPagerIndicator> 
+    
+    <android.support.v4.view.ViewPager  
+        android:id="@id/id_stickynavlayout_viewpager"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:background="#44ff0000" >  
+    </android.support.v4.view.ViewPager>  
+    
+</com.sunsg.item.view.StickyNavLayout>

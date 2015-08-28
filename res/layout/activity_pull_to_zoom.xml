@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ff000000" >
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <Button
+            android:id="@+id/left"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="left"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Sunsg"
+            android:textSize="30sp"
+            android:textColor="#ffffffff"
+            />
+        
+        <Button
+            android:id="@+id/right"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="right"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>  
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+    />
+    
+    <com.sunsg.item.view.PullToZoomListView 
+        android:id="@+id/pull_to_zoom_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0px"
+        >
+        
+    </com.sunsg.item.view.PullToZoomListView>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:visibility="gone"
+        />
+    
+    <RelativeLayout
+        android:id="@+id/rl_stars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        >
+        </RelativeLayout>
+    <com.sunsg.item.view.MyListView 
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:cacheColorHint="#00000000"
+        ></com.sunsg.item.view.MyListView>
+
+</RelativeLayout>

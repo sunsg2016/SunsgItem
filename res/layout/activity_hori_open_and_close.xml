@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff" >
+
+    <com.sunsg.item.view.SwtichButton2
+        android:id="@+id/swtichBtn"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/swtichBtn" />
+    <TextView 
+        android:id="@+id/tv_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_test"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        />
+    <Button 
+        android:layout_below="@+id/tv_test"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+
+    <com.sunsg.item.view.CountryTipScrollBar
+        android:visibility="invisible"
+        android:id="@+id/sb_country_scrollbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

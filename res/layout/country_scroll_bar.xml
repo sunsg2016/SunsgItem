@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/v_scroll_bar"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="80dp"
+        android:background="#c9c9c9" />
+
+    <ImageView
+        android:id="@+id/iv_scroll_bar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="80dp"
+        android:scaleType="centerInside"
+	 	android:src="@drawable/country_scroll_bar"/>
+
+    <TextView
+        android:id="@+id/tv_scroll_tip"
+        android:layout_width="84dp"
+        android:layout_height="76dp"
+        android:layout_marginRight="24dp"
+        android:layout_gravity="right"
+        android:background="@drawable/country_select_letter_tip"
+        android:gravity="center"
+        android:paddingRight="7dp"
+        android:text="A"
+        android:textColor="@color/white"
+        android:textSize="40sp" 
+        android:visibility="invisible"
+        />
+
+</FrameLayout>

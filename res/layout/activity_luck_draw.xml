@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff" >
+
+    <Button
+        android:id="@+id/btn_luck_draw"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:onClick="luckDraw"
+        android:text="转盘"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_bird"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/btn_luck_draw"
+        android:onClick="bird"
+        android:text=" 鸟 "
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_flooer"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/btn_bird"
+        android:onClick="flooer"
+        android:text=" flooer "
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_overDraw"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/btn_flooer"
+         android:onClick="overDraw"
+        android:text="overDraw"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_luckDraw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.sunsg.item.view.SurfaceViewLuckDraw
+            android:id="@+id/luckdraw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:padding="30dp" />
+
+        <ImageButton
+            android:id="@+id/Im_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:onClick="start"
+            android:scaleType="centerCrop"
+            android:src="@drawable/start" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bird"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:visibility="gone" >
+
+        <com.sunsg.item.view.SurfaceViewBird
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_other"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66d5d5d5"
+        android:visibility="gone" >
+
+        <com.sunsg.item.view.BitmapShaderView
+            android:id="@+id/flooer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true" />
+
+        <com.sunsg.item.view.TuoYuanMei
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_overDraw"
+        android:visibility="gone"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.sunsg.item.view.OverDrawView
+            android:id="@+id/overDrawView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

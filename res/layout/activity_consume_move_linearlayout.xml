@@ -1,0 +1,20 @@
+<com.sunsg.item.view.CanMoveLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/linearlayout"
+    android:background="#ffffffff" >
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#ffffff00"
+        />
+    
+     <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="2000dp"
+        android:background="#ff00ffff"
+        />
+
+</com.sunsg.item.view.CanMoveLinearLayout>

@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.breadtrip"
+    android:versionCode="50"
+    android:versionName="5.0.0" >
+
+    <!-- com.sunsg.item -->
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" /> <!-- android:targetSdkVersion="18" -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="com.sunsg.item.MainApplicaion"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        <activity
+            android:name="com.sunsg.item.MainActivity"
+            android:configChanges="screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="MainActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.WhichAppInstalledActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="WhichAppInstalledActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.WebViewBaseActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="WebViewBaseActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.slideViewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="slideViewActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.MyListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="MyListActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.LuckDrawActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="LuckDrawActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.RandomAccessFileActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="RandomAccessFileActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.SelectCityActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="SelectCityActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.SinaShareActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="SinaShareActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.ViewDragActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="ViewDragActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.sunsg.item.HoriOpenAndCloseActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="HoriOpenAndCloseActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="com.sunsg.item.TestThreadActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="TestThreadActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.ImageListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="ImageListActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.ConsumeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="ConsumeActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.TestViewTouchEventActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="TestViewTouchEventActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.BaiduLocation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="BaiduLocation"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.PullToZoomActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="PullToZoomActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.LitePalActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="LitePalActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.BaseJavaTestActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <!-- fragment -->
+        <activity
+            android:name="com.sunsg.item.fragment.TestFragmentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="TestFragmentActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.fragment.ViewPageFragmentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="ViewPageFragmentActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.fragment.FragmentDemo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="FragmentDemo"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.fragment.WXFragmentActivity"
+            android:label="@string/app_name"
+            android:logo="@drawable/back_menu_icon"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="WXFragmentActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+
+        <!-- testactivity -->
+        <activity
+            android:name="com.sunsg.item.testactivity.Activity1"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="Activity1"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.testactivity.Activity2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="Activity2"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.testactivity.Activity3"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="Activity3"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.testactivity.Activity4"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="Activity4"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.testactivity.Activity5"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="Activity5"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+
+        <!-- bread -->
+
+        <activity
+            android:name="com.sunsg.item.breadtrip.LoginFragment"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="LoginFragment"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sunsg.item.breadtrip.BreadTripFragmentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="BreadTripFragmentActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+
+        <!-- bread -->
+        <!-- loopj -->
+        <activity
+            android:name="com.sunsg.loopj.LoopjFragmentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="LoopjFragmentActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <!-- loopj -->
+        <activity android:name="com.loopj.android.http.sample.WaypointsActivity" />
+        <activity android:name="com.loopj.android.http.sample.GetSample" />
+        <activity android:name="com.loopj.android.http.sample.PostSample" />
+        <activity android:name="com.loopj.android.http.sample.DeleteSample" />
+        <activity android:name="com.loopj.android.http.sample.PutSample" />
+        <activity android:name="com.loopj.android.http.sample.JsonSample" />
+        <activity android:name="com.loopj.android.http.sample.JsonStreamerSample" />
+        <activity android:name="com.loopj.android.http.sample.FileSample" />
+        <activity android:name="com.loopj.android.http.sample.BinarySample" />
+        <activity android:name="com.loopj.android.http.sample.GzipSample" />
+        <activity android:name="com.loopj.android.http.sample.Redirect302Sample" />
+        <activity android:name="com.loopj.android.http.sample.ThreadingTimeoutSample" />
+        <activity android:name="com.loopj.android.http.sample.CancelAllRequestsSample" />
+        <activity android:name="com.loopj.android.http.sample.CancelRequestHandleSample" />
+        <activity android:name="com.loopj.android.http.sample.SynchronousClientSample" />
+        <activity android:name="com.loopj.android.http.sample.IntentServiceSample" />
+        <activity android:name="com.loopj.android.http.sample.SaxSample" />
+        <activity android:name="com.loopj.android.http.sample.FilesSample" />
+        <activity android:name="com.loopj.android.http.sample.PersistentCookiesSample" />
+        <activity android:name="com.loopj.android.http.sample.CustomCASample" />
+        <activity android:name="com.loopj.android.http.sample.RetryRequestSample" />
+        <activity android:name="com.loopj.android.http.sample.RangeResponseSample" />
+        <activity android:name="com.loopj.android.http.sample.Http401AuthSample" />
+        <activity android:name="com.loopj.android.http.sample.AsyncBackgroundThreadSample" />
+        <activity android:name="com.loopj.android.http.sample.ContentTypeForHttpEntitySample" />
+        <activity android:name="com.loopj.android.http.sample.ResumeDownloadSample" />
+        <activity android:name="com.loopj.android.http.sample.PrePostProcessingSample" />
+        <activity android:name="com.loopj.android.http.sample.DigestAuthSample" />
+
+        <service android:name="com.loopj.android.http.sample.services.ExampleIntentService" />
+        <!-- loopj -->
+
+
+        <!-- Android-Universal-Image-Loader -->
+        <activity
+            android:name="com.nostra13.universalimageloader.sample.activity.HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nostra13.universalimageloader.sample.activity.SimpleImageActivity"
+            android:label="@string/ac_name_image_list" />
+        <activity
+            android:name="com.nostra13.universalimageloader.sample.activity.ComplexImageActivity"
+            android:label="@string/ac_name_complex" />
+
+        <!-- Widget -->
+        <receiver android:name="com.nostra13.universalimageloader.sample.activity.UILWidgetProvider" >
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider" />
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+        <!-- Android-Universal-Image-Loader -->
+
+
+        <!-- com.sunsg.item.persionalimage -->
+        <activity
+            android:name="com.sunsg.item.persionalimage.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="PersinalImageMainActivity"
+                    android:scheme="sunsg" />
+            </intent-filter>
+        </activity>
+        <!-- /com.sunsg.item.persionalimage -->
+
+
+        <!-- 百度定位 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="n41DsrB5cI2OSmPiFXBjCHps" />
+
+        <activity
+            android:name=".firstcode.Session1Activity"
+            android:label="@string/title_activity_session1"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".firstcode.Session1_NormalActivity"
+            android:label="@string/title_activity_session1__normal"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name=".firstcode.Session1_DialogActivity"
+            android:label="@string/title_activity_session1__normal" >
+        </activity>
+    </application>
+
+</manifest>

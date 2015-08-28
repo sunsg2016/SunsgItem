@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SunsgItem</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_search">搜索</string>
+    <string name="action_plus">功能</string>
+    <string name="action_album">我的相册</string>
+    <string name="action_collection">我的收藏</string>
+    <string name="action_card">我的银行卡</string>
+    <string name="action_settings">设置</string>
+    <string name="action_feed">意见反馈</string>
+    <string name="plus_group_chat">发起群聊</string>
+    <string name="plus_add_friend">添加朋友</string>
+    <string name="plus_video_chat">视频聊天</string>
+    <string name="plus_scan">扫一扫</string>
+    <string name="plus_take_photo">拍照分享</string>
+
+    <!-- loopj -->
+    <string name="field_username">Username</string>
+    <string name="field_password">Password</string>
+    <string name="button_run">Run</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="menu_use_https">Use HTTPS</string>
+    <string name="menu_clear_view">Clear Outputs</string>
+    <string name="label_headers">Headers (key=val, one per line)</string>
+    <string name="label_req_body">Request body</string>
+    <string name="label_credentials">Server requests authentication.\nTo gain access, enter:\n\nUsername: %1$s\nPassword: %2$s</string>
+    <string name="title_get_sample">GET</string>
+    <string name="title_json_sample">GET JSON and parse it</string>
+    <string name="title_json_streamer_sample">POST JSON using streamer</string>
+    <string name="title_post_sample">POST</string>
+    <string name="title_put_sample">PUT</string>
+    <string name="title_delete_sample">DELETE</string>
+    <string name="title_file_sample">GET to File</string>
+    <string name="title_binary_sample">GET binary data</string>
+    <string name="title_cancel_all">Cancel all requests</string>
+    <string name="title_sax_example">SAX Example</string>
+    <string name="title_cancel_handle">Cancel request handle</string>
+    <string name="title_synchronous">Synchronous GET request</string>
+    <string name="title_threading_timeout">Threading timeouts</string>
+    <string name="title_gzip_sample">GET Gzipped JSON and parse it</string>
+    <string name="title_intent_service_sample">IntentService Synchronised Request</string>
+    <string name="title_post_files">Post Multipart-encoded files</string>
+    <string name="title_redirect_302">302 Redirect handling</string>
+    <string name="title_persistent_cookies">Handling persistent cookies</string>
+    <string name="title_custom_ca">Custom CA Example</string>
+    <string name="title_retry_handler">Retrying requests by Exception</string>
+    <string name="title_range_sample">Range response handling</string>
+    <string name="title_401_unauth">401 basic authentication</string>
+    <string name="title_pre_post_processing">Pre-/Post-processing</string>
+    <string name="title_async_background_thread">Async on background thread</string>
+    <string name="title_content_type_http_entity">Content-Type with HttpEntity</string>
+    <string name="title_resume_download">Resuming Download</string>
+    <string name="title_digest_auth">Digest Authentication</string>
+    <!-- loopj -->
+
+
+    <!-- Android-Universal-Image-Loader -->
+    <string name="ac_name_image_list">Image List Example</string>
+    <string name="ac_name_image_grid">Image Grid Example</string>
+    <string name="ac_name_image_pager">Image Pager Example</string>
+    <string name="ac_name_image_gallery">Image Gallery Example</string>
+    <string name="ac_name_complex">Complex Example</string>
+    <!-- Labels -->
+    <string name="label_examples">Examples</string>
+    <string name="button_image_list">ListView</string>
+    <string name="button_image_grid">GridView</string>
+    <string name="button_image_pager">ViewPager</string>
+    <string name="button_image_gallery">Gallery</string>
+    <string name="button_list_and_grid">ViewPager (ListView + GridView)</string>
+    <string name="title_list">List</string>
+    <string name="title_grid">Grid</string>
+    <string name="menu_item_clear_memory_cache">Clear memory cache</string>
+    <string name="menu_item_clear_disc_cache">Clear disc cache</string>
+    <string name="menu_item_pause_on_scroll">Pause on scroll</string>
+    <string name="menu_item_pause_on_fling">Pause on fling</string>
+
+    <!-- Content descriptions -->
+    <string name="descr_image">Image</string>
+
+    <!-- Android-Universal-Image-Loader -->
+
+    <string name="title_activity_test_thread">TestThreadActivity</string>
+    <string name="title_activity_base_java_test">BaseJavaTestActivity</string>
+    <string name="title_activity_sina_share">SinaShareActivity</string>
+    <string name="title_activity_session1">Session1</string>
+    <string name="title_activity_session1__normal">Session1_NormalActivity</string>
+
+</resources>

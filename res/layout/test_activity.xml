@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+     >
+<TextView 
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:text="title"
+    android:textSize="22sp"
+    android:gravity="center_vertical|center_horizontal"
+    android:textColor="#ff333333"
+    />
+    
+<Button 
+    android:id="@+id/btn_start"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="启动"
+    android:textSize="18sp"
+    android:layout_centerInParent="true"
+    />
+
+</RelativeLayout>

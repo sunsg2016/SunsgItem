@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff" >
+
+    <ScrollView
+        android:id="@+id/left_content_SV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/left_content_LL"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+            
+            <com.sunsg.item.view.TextTouchEventButton 
+                android:id="@+id/btn_test_touch_event"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:text="Test Touch Event"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.sunsg.item.view.HotelDrawerScrollView
+        android:id="@+id/root_slide_SV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/left_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:id="@+id/main_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffffff" >
+
+                <include
+                    android:id="@+id/title"
+                    layout="@layout/view_title" />
+
+                <ScrollView
+                    android:id="@+id/vertical_SV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:fadingEdge="none"
+                    android:fadingEdgeLength="0dp"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content" >
+						<Button
+                            android:layout_width="match_parent"
+                            android:background="#ff4739af"
+                            android:layout_height="100dp" />
+                        <Button
+                            android:id="@+id/my_content_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="1000dp" />
+                         <Button
+                            android:layout_width="match_parent"
+                            android:background="#ff89abef"
+                            android:layout_height="100dp" />
+                       
+                    </LinearLayout>
+                </ScrollView>
+
+                <Button
+                    android:id="@+id/show_main_content"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="#00000000" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.sunsg.item.view.HotelDrawerScrollView>
+
+</RelativeLayout>
